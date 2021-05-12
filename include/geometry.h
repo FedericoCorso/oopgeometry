@@ -10,12 +10,12 @@ using namespace std;
     private :
        int x , y ;
     public :        
-        Point ( int u=0, int v=0 );
-        int get_x ();
-        int get_y ();
+        Point ( const int u=0, const int v=0 );
+        int get_x () const;
+        int get_y () const;
         void set_x(const int x);
         void set_y(const int y);
-        string as_string();
+        string as_string() const;
  };
 
 
@@ -38,9 +38,9 @@ using namespace std;
 
         ~PointArray();
 
-        void push_back(Point &p);
+        void push_back(const Point &p);
 
-        void insert(int pos, Point &p);
+        void insert(const int pos, const Point &p);
 
         void remove(int pos);
 
@@ -48,7 +48,9 @@ using namespace std;
 
         void clear();
 
-        string as_string();
+        string as_string() const;
+
+        const Point * get(const int pos) const;
 
         Point * get(const int pos);
  };

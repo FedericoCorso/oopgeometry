@@ -2,11 +2,11 @@
 #include <geometry.h>
 
  
-Point::Point ( int u, int v ) : x ( u ) , y ( v ) {};
+Point::Point ( const int u, const int v ) : x ( u ) , y ( v ) {};
 
-int Point::get_x () { return x ; }
+int Point::get_x () const { return x ; }
 
-int Point::get_y ()  { return y ; }
+int Point::get_y () const { return y ; }
 
 void Point::set_x(const int x){
     this->x = x;
@@ -15,7 +15,7 @@ void Point::set_y(const int y){
     this->y = y;
 }
 
-string Point::as_string() {
+string Point::as_string() const {
     return std::to_string(this->x) + string(",") + std::to_string(this->y);
 }
 
@@ -71,13 +71,13 @@ PointArray::~PointArray(){
     delete[] points;
 }
 
-void PointArray::push_back(Point &p){
+void PointArray::push_back(const Point &p){
     cout << "DEBUG: pushing back " << p.as_string() << endl;
     resize(this->size+1);
     this->points[this->size-1] = p;            
 }
 
-void PointArray::insert(int pos, Point &p){
+void PointArray::insert(const int pos, const Point &p){
     cout << "DEBUG: inserting " << p.as_string() << " into pos " << pos << endl;
     if (pos < 0){
         throw std::invalid_argument(string("pos is negative!") + std::to_string(pos));
@@ -114,12 +114,22 @@ void PointArray::clear(){
     resize(0);
 }
 
-string PointArray::as_string(){
+string PointArray::as_string() const {
     string s = string("size: ") + std::to_string(this->size) + string(" points:");
     for (int i=0; i < this->size; i++){
         s += string("  ") + this->points[i].as_string();
     }
     return s;
+}
+
+const Point * PointArray::get(const int pos) const{
+    if (pos < 0){
+        throw std::invalid_argument(string("pos is negative!") + std::to_string(pos));
+    }
+    if (pos >= this->size){
+        throw std::invalid_argument(string("pos exceeds array limits: ") + std::to_string(pos));
+    }
+    return &(this->points[pos]);
 }
 
 Point * PointArray::get(const int pos){
@@ -131,3 +141,4 @@ Point * PointArray::get(const int pos){
     }
     return &(this->points[pos]);
 }
+
