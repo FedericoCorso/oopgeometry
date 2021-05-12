@@ -1,0 +1,6 @@
+/Users/federicocorso/tpa/esercizi/oopgeometry/build/CMakeFiles/rebuild_cache.dir
+/Users/federicocorso/tpa/esercizi/oopgeometry/build/CMakeFiles/edit_cache.dir
+/Users/federicocorso/tpa/esercizi/oopgeometry/build/CMakeFiles/mainEntry.dir
+/Users/federicocorso/tpa/esercizi/oopgeometry/build/tests/CMakeFiles/rebuild_cache.dir
+/Users/federicocorso/tpa/esercizi/oopgeometry/build/tests/CMakeFiles/edit_cache.dir
+/Users/federicocorso/tpa/esercizi/oopgeometry/build/tests/CMakeFiles/catch2Test.dir

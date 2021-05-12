@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/Users/federicocorso/tpa/esercizi/oopgeometry/build",
+  "command": "/usr/bin/clang++  -I/Users/federicocorso/tpa/esercizi/oopgeometry/include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/mainEntry.dir/main.cpp.o -c /Users/federicocorso/tpa/esercizi/oopgeometry/main.cpp",
+  "file": "/Users/federicocorso/tpa/esercizi/oopgeometry/main.cpp"
+},
+{
+  "directory": "/Users/federicocorso/tpa/esercizi/oopgeometry/build",
+  "command": "/usr/bin/clang++  -I/Users/federicocorso/tpa/esercizi/oopgeometry/include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/mainEntry.dir/src/geometry.cpp.o -c /Users/federicocorso/tpa/esercizi/oopgeometry/src/geometry.cpp",
+  "file": "/Users/federicocorso/tpa/esercizi/oopgeometry/src/geometry.cpp"
+},
+{
+  "directory": "/Users/federicocorso/tpa/esercizi/oopgeometry/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/federicocorso/tpa/esercizi/oopgeometry/tests/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/catch2Test.dir/catch2Main.cpp.o -c /Users/federicocorso/tpa/esercizi/oopgeometry/tests/catch2Main.cpp",
+  "file": "/Users/federicocorso/tpa/esercizi/oopgeometry/tests/catch2Main.cpp"
+},
+{
+  "directory": "/Users/federicocorso/tpa/esercizi/oopgeometry/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/federicocorso/tpa/esercizi/oopgeometry/tests/../include -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -std=gnu++17 -o CMakeFiles/catch2Test.dir/__/src/geometry.cpp.o -c /Users/federicocorso/tpa/esercizi/oopgeometry/src/geometry.cpp",
+  "file": "/Users/federicocorso/tpa/esercizi/oopgeometry/src/geometry.cpp"
+}
+]
